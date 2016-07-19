@@ -10,18 +10,18 @@
             <objects>
                 <splitViewController id="B2z-am-fhg" sceneMemberID="viewController">
                     <connections>
-                        <segue destination="V37-lk-T8c" kind="relationship" relationship="masterViewController" id="fGn-1Q-rw0"/>
                         <segue destination="ZNk-2F-eb2" kind="relationship" relationship="detailViewController" id="iY4-A2-gbW"/>
+                        <segue destination="DR6-W0-RPJ" kind="relationship" relationship="masterViewController" id="5ZR-5d-EWD"/>
                     </connections>
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Npl-uz-iBA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-417" y="332"/>
+            <point key="canvasLocation" x="-1347" y="302"/>
         </scene>
-        <!--View Controller-->
+        <!--Enemies-->
         <scene sceneID="GzI-H6-FFq">
             <objects>
-                <viewController id="V37-lk-T8c" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="V37-lk-T8c" customClass="PlayerVC" customModule="SplitView" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8cn-yr-36a"/>
                         <viewControllerLayoutGuide type="bottom" id="X5y-40-YTk"/>
@@ -29,12 +29,126 @@
                     <view key="view" contentMode="scaleToFill" id="n8F-UN-2D1">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xAX-2k-r9D">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="0.65298871889999999" green="0.7618611595" blue="0.81758814099999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="xAX-2k-r9D" firstAttribute="top" secondItem="8cn-yr-36a" secondAttribute="bottom" id="C81-vy-lEt"/>
+                            <constraint firstItem="xAX-2k-r9D" firstAttribute="leading" secondItem="n8F-UN-2D1" secondAttribute="leading" id="UKl-bc-fcB"/>
+                            <constraint firstAttribute="trailing" secondItem="xAX-2k-r9D" secondAttribute="trailing" id="ofu-oW-Os3"/>
+                            <constraint firstItem="X5y-40-YTk" firstAttribute="top" secondItem="xAX-2k-r9D" secondAttribute="bottom" id="vSD-Io-6XT"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Enemies" id="Dxy-p3-3Fz"/>
+                    <connections>
+                        <outlet property="tableView" destination="xAX-2k-r9D" id="Ckk-IO-sut"/>
+                        <segue destination="9W8-ZV-tTV" kind="showDetail" identifier="ShowDetailSegue" id="eur-43-LOA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k4X-EI-1qv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="50"/>
+            <point key="canvasLocation" x="167" y="320"/>
+        </scene>
+        <!--DetailVC-->
+        <scene sceneID="HG0-pp-e8Q">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="9W8-ZV-tTV" customClass="DetailVC" customModule="SplitView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xmZ-c2-8rG"/>
+                        <viewControllerLayoutGuide type="bottom" id="9CS-oM-WzO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gZF-zm-ORr">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oM7-CC-p8L">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="Ibe-bI-wv6">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="287"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="4mQ-W5-mNh">
+                                                <rect key="frame" x="225" y="0.0" width="150" height="150"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dracula" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mAH-Uq-uiu">
+                                                <rect key="frame" x="235" y="153" width="130" height="42"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="35"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="60s-ya-glz">
+                                                <rect key="frame" x="257" y="198" width="87" height="20"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Destroyed by Richter in 1792. (5 years ago)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Nl-3H-6sn">
+                                                <rect key="frame" x="136" y="221" width="328" height="20"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Locations" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0vk-fK-b19">
+                                                <rect key="frame" x="263" y="244" width="75" height="20"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bloodlines: Final Stage" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sLi-in-5br">
+                                                <rect key="frame" x="213" y="267" width="175" height="20"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Ibe-bI-wv6" firstAttribute="width" secondItem="oM7-CC-p8L" secondAttribute="width" id="IU5-Gn-Am9"/>
+                                    <constraint firstItem="Ibe-bI-wv6" firstAttribute="leading" secondItem="oM7-CC-p8L" secondAttribute="leading" id="Yck-re-fVb"/>
+                                    <constraint firstItem="Ibe-bI-wv6" firstAttribute="top" secondItem="oM7-CC-p8L" secondAttribute="top" id="hoj-Do-g3c"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ibe-bI-wv6" secondAttribute="bottom" id="jpj-O4-sIb"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oM7-CC-p8L" firstAttribute="leading" secondItem="gZF-zm-ORr" secondAttribute="leading" id="3D7-BY-sIW"/>
+                            <constraint firstAttribute="trailing" secondItem="oM7-CC-p8L" secondAttribute="trailing" id="79w-Jf-f2x"/>
+                            <constraint firstItem="9CS-oM-WzO" firstAttribute="top" secondItem="oM7-CC-p8L" secondAttribute="bottom" id="AHF-b0-veh"/>
+                            <constraint firstItem="oM7-CC-p8L" firstAttribute="top" secondItem="xmZ-c2-8rG" secondAttribute="bottom" id="jbM-FZ-MWD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descLbl" destination="9Nl-3H-6sn" id="CqO-JA-l0m"/>
+                        <outlet property="enemyImg" destination="4mQ-W5-mNh" id="dnq-s6-CBc"/>
+                        <outlet property="locationsLbl" destination="sLi-in-5br" id="8Rf-sg-RFm"/>
+                        <outlet property="nameLbl" destination="mAH-Uq-uiu" id="8Kb-Um-NUP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xga-uR-gHg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="889" y="320"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Huv-5e-c6Z">
+            <objects>
+                <navigationController id="DR6-W0-RPJ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dVw-gn-ftv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="V37-lk-T8c" kind="relationship" relationship="rootViewController" id="ub6-3Z-XK3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iTV-PN-Hgb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-553" y="-98"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Zca-jM-Hfj">
@@ -47,12 +161,27 @@
                     <view key="view" contentMode="scaleToFill" id="BPL-E0-dD9">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select an Enemy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0RQ-aU-tNV">
+                                <rect key="frame" x="237" y="289" width="127" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.61524714189999996" green="0.80170272440000001" blue="0.62938161569999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="0RQ-aU-tNV" firstAttribute="centerX" secondItem="BPL-E0-dD9" secondAttribute="centerX" id="T3g-DA-Et8"/>
+                            <constraint firstItem="0RQ-aU-tNV" firstAttribute="centerY" secondItem="BPL-E0-dD9" secondAttribute="centerY" id="mLv-6I-dhS"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7m7-yE-DTL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="713"/>
+            <point key="canvasLocation" x="-487" y="1075"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="1" width="150" height="150"/>
+    </resources>
 </document>

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Player {
+struct Player {
     private var _name : String = ""
     var name : String {
         return _name
@@ -39,10 +39,7 @@ class Player {
         return _backgroundColor
     }
     
-    static func createPlayers() -> [Player]{
-        return []
-    }
-    
+   
     init (name: String, desc: String, locations:[String], image: UIImage!, textColor1: UIColor!, textColor2: UIColor!) {
         
         self._name = name
@@ -53,7 +50,7 @@ class Player {
         self._textColor2 = textColor2
     }
     
-    func makeEnemies() -> [Player]{
+    static func makeEnemies() -> [Player]{
         
         let dracula = Player(name: "Dracula", desc: "Destroyed by Richter in 1792. (5 years ago)", locations: ["Final Stage: Bloodlines"], image: UIImage(named: "1"), textColor1: UIColor.blackColor(), textColor2: UIColor.redColor())
         
@@ -66,7 +63,8 @@ class Player {
         let zombie = Player(name: "Zombie", desc: "Fresh Corpses. Magically animated", locations: ["Entrance"], image: UIImage(named: "5"), textColor1: UIColor.blackColor(), textColor2: UIColor.redColor())
         
         
-        return[dracula, skeleton, bat, skull, zombie]
+        return [dracula, skeleton, bat, skull, zombie]
+        
     }
     
 }
