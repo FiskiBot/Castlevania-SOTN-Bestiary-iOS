@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PlayerVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class PlayerVC: UIViewController, UITableViewDataSource, UITableViewDelegate, UISplitViewControllerDelegate {
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -19,7 +19,15 @@ class PlayerVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         super.viewDidLoad()
         self.tableView.dataSource = self
         self.tableView.delegate = self
+        self.splitViewController?.preferredDisplayMode  = .AllVisible
+        self.splitViewController?.delegate = self
+        
+        
         tableView.backgroundColor = UIColor.blackColor()
+    }
+    
+    func splitViewController(splitViewController: UISplitViewController, collapseSecondaryViewController secondaryViewController: UIViewController, ontoPrimaryViewController primaryViewController: UIViewController) -> Bool {
+        return true
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
