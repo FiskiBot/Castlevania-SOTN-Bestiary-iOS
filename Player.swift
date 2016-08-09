@@ -102,13 +102,13 @@ struct Player {
         
         let fleaman = Player(image: UIImage(named: "fleaman"), name: "Flea Man", desc: "Strange human-like creature. Jumps like a flea. (...)", locations: ["Marble Gallery", "Long Library"], weakness: ["None"], absorbs: ["None"], drops: ["Takemitsu", "Cheese"], HP: 11, level: 7, exp: 17)
         
-        let medusa = Player(image: UIImage(named: "medusahead2"), name: "Medusa Head [LVL.7]", desc: "From Medusa's hair.", locations: ["Black Marble Gallery", "Clock Tower", "Death Wing's Lair", "Outer Wall"], weakness: ["None"], absorbs: ["Stone"], drops: ["Resist Stone", "Medusa Shield"], HP: 12, level: 7, exp: 20)
+        let medusahead = Player(image: UIImage(named: "medusahead2"), name: "Medusa Head [LVL.7]", desc: "From Medusa's hair.", locations: ["Black Marble Gallery", "Clock Tower", "Death Wing's Lair", "Outer Wall"], weakness: ["None"], absorbs: ["Stone"], drops: ["Resist Stone", "Medusa Shield"], HP: 12, level: 7, exp: 20)
         
         let bladeSoldier = Player(image: UIImage(named: "bladesoldier"), name: "Blade Soldier", desc: "Novice of twin-bladed combat", locations: ["Colosseum"], weakness: ["None"], absorbs: ["None"], drops: ["$400", "Namakura"], HP: 16, level: 8, exp: 20)
         
         let boneMusket = Player(image: UIImage(named: "bonemusket"), name: "Bone Musket", desc: "Skeletons equipped with rifles.", locations: ["Colosseum", "Outer Wall"], weakness: ["Holy"], absorbs: ["None"], drops: ["Magic Missile", "Talisman"], HP: 24, level: 8, exp: 20)
         
-        let medusa2 = Player(image: UIImage(named: "medusahead3"), name: "Medusa Head [LVL.8]", desc: "From Medusa's hair. Can petrify.", locations: ["Black Marble Gallery", "Clock Tower", "Death Wing's Lair", "Reverse Clock Tower", "Outer Wall"], weakness: ["None"], absorbs: ["Stone"], drops: ["Resist Stone"], HP: 12, level: 8, exp: 30)
+        let medusahead2 = Player(image: UIImage(named: "medusahead3"), name: "Medusa Head [LVL.8]", desc: "From Medusa's hair. Can petrify.", locations: ["Black Marble Gallery", "Clock Tower", "Death Wing's Lair", "Reverse Clock Tower", "Outer Wall"], weakness: ["None"], absorbs: ["Stone"], drops: ["Resist Stone"], HP: 12, level: 8, exp: 30)
         
         let plateLord = Player(image: UIImage(named: "platelord"), name: "Plate Lord", desc: "Heavily armored knight with iron ball.", locations: ["Colosseum", "Marble Gallery"], weakness: ["None"], absorbs: ["None"], drops: ["Iron Ball", "Neutron Bomb"], HP: 90, level: 8, exp: 90)
         
@@ -279,8 +279,83 @@ struct Player {
         
         let darkWingBat = Player(image: UIImage(named: "darkwingbat"), name: "Darkwing Bat", desc: "Giant vampire bat.", locations: ["Reverse Clock Tower"], weakness: ["None"], absorbs: ["None"], drops: ["Ring of Vlad"], HP: 600, level: 35, exp: 1200)
         
+        let dragonRider = Player(image: UIImage(named: "dragonrider"), name: "Dragon Rider", desc: "White dragon ridden by Flea Man.", locations: ["Reverse Entrance"], weakness: ["None"], absorbs: ["None"], drops: ["None"], HP: 120, level: 35, exp: 150)
         
-        return [dracula, bloodSkeleton, bat, stoneSkull, zombie, merman2, skeleton,warg, boneScimitar, merman3, spittleBone, axeKnight, bloodyZombie, slinger, ouijaTable, skelerang, thornweed, gaibon, ghost, marionette, slogra, diplocephalus, fleaman, medusa, bladeSoldier, boneMusket, medusa2, plateLord, stoneRose, axeKnight2, ctulhu, boneArcher, bonePillar, doppleganger10, owl, phantomSkull, scyllaWrym, skeletonApe, spearGuard, spellBook, wingedGuard, ectoplasm, swordLord, toad, armorLord, cornerGuard, dhuron, frog, frozenShade, magicTome, skullLord, blackCrow, blueRaven, corpseWeed, flailGuard, fleaRider, spectralSword, boneHalberd, scylla, huntingGirl, mudman, owlKnight, spectralSword2, vandalSword, fleaArmor, hippogriph, paranthropus, slime, bladeMaster, wereSkeleton, graveKeeper, gremlin, harpy, minotaur, werewolf, boneArc, valhallaKnight, cloakedKnight, fishHead, lesserDemon, lossoth, salemWitch, blade, gurkha, hammer, discusLord, karasuman, largeSlime, hellfireBeast, cerberus, killerFish, olrox, succubus, tombstone, venusWeed, lion, scarecrow, granfaloon, schmoo, tinman, balloonPod, yorick, bombKnight, flyingZombie, bitterfly, jackObones, archer, werewolf34, blackPanther, darkWingBat]
+        let minotaur35 = Player(image: UIImage(named: "minotaur2" ), name: "Minotaur [LVL. 35]", desc: "Bull-headed monster.", locations: ["Reverse Colosseum"], weakness: ["None"], absorbs: ["None"], drops: ["None"], HP: 320, level: 35, exp: 250)
+        
+        let novaSkeleton = Player(image: UIImage(named: "novaskeleton"), name: "Nova Skeleton", desc: "Wields fearsome beam weapon.", locations: ["Black Marble Gallery", "Reverse Caverns", "Reverse Entrance", "Reverse Outer Wall"], weakness: ["None"], absorbs: ["None"], drops: ["None"], HP: 20, level: 35, exp: 444)
+        
+        let orobourous = Player(image: UIImage(named: "orobourous"), name: "Orobourous", desc: "Wyrm controlled by Flea Man.", locations: ["Reverse Entrance"], weakness: ["Holy"], absorbs: ["Fire"], drops: ["None"], HP: 260, level: 35, exp: 150)
+        
+        let whiteDragon = Player(image: UIImage(named: "whitedragon"), name: "White Dragon", desc: "Animated skeleton of huge dragon.", locations: ["Reverse Colosseum"], weakness: ["Holy"], absorbs: ["Fire"], drops: ["None"], HP: 260, level: 35, exp: 150)
+        
+        let fireWarg = Player(image: UIImage(named: "firewarg"), name: "Fire Warg", desc: "Fireball-spitting wolf", locations: ["Reverse Entrance"], weakness: ["Ice"], absorbs: ["Fire"], drops: ["Turquoise","Karma Coin"], HP: 200, level: 36, exp: 160)
+        
+        let rockKnight = Player(image: UIImage(named: "rockknight"), name: "Rock Knight", desc: "Rock-tossing aromored knight.", locations: ["Reverse Cavernes"], weakness: ["None"], absorbs: ["None"], drops: ["Jewel Knuckles", "Platinum Mail"], HP: 140, level: 36, exp: 250)
+        
+        let sniperOfGoth = Player(image: UIImage(named: "sniperofgoth"), name: "Sniper of Goth", desc: "Angel archer. Slew Amalaric of the Goths.", locations: ["Anti-Chapel"], weakness: ["Dark"], absorbs: ["Holy"], drops: ["Magic Missile"," Brilliant Mail"], HP: 50, level: 36, exp: 200)
+        
+        let spectralSword3 = Player(image: UIImage(named: "spectralsword3"), name: "Spectral Sword [LVL. 36]", desc: "Evil demon-sword. Causes poltergeist phenomena.", locations: ["Anti-Chapel"], weakness: ["None"], absorbs: ["None"], drops: ["Gurthang", "Mablung Sword", "Shields: Knight Shield", "Spears: Javelin"], HP: 540, level: 36, exp: 400)
+        
+        let ghostDancer = Player(image: UIImage(named: "ghostdancer"), name: "Ghost Dancer", desc: "Skeleton with leaping attack.", locations: ["Death Wing's Lair"], weakness: ["Holy"], absorbs: ["None"], drops: ["Buffalo Star", "Stone Mask"], HP: 30, level: 37, exp: 160)
+        
+        let wargRider = Player(image: UIImage(named: "wargrider"), name: "Warg Rider", desc: "Skeleton mounted on Warg.", locations: ["Reverse Entrance"], weakness: ["Ice"], absorbs: [" Cut (resist)", "Fire (immune)"], drops: ["None"], HP: 120, level: 37, exp: 160)
+        
+        let caveTroll = Player(image: UIImage(named: "cavetroll"), name: "Cave Troll", desc: "Pre-intelligent bloodsucker with long tongue for sucking.", locations: ["Reverse Caverns"], weakness: ["Fire"], absorbs: ["Water"], drops: ["Neutron Bomb", "Nauglamir"], HP: 88, level: 38, exp: 333)
+        
+        let darkOctopus = Player(image: UIImage(named: "darkoctopus"), name: "Dark Octopus", desc: "Evil mutated octopus.", locations: ["Reverse Caverns"], weakness: ["Fire", "Thunder"], absorbs: ["Weakness"], drops: ["Sushi", "Green Tea"], HP: 280, level: 38, exp: 120)
+        
+        let fireDemon = Player(image: UIImage(named: "firedemon"), name: "Fire Demon", desc: "Flame Demon", locations: ["Necromancy Laboratory"], weakness: ["None"], absorbs: ["Fire"], drops: ["Fire Shield","Marsil"], HP: 240, level: 38, exp: 666)
+        
+        let gorgon = Player(image: UIImage(named: "gorgon"), name: "Gorgon", desc: "Armor plated war-beast.", locations: ["Black Marble Gallery"], weakness: ["None"], absorbs: ["Fire","Stone","Cut", "Hit"], drops: ["Hammer", "Stone Sword"], HP: 450, level: 39, exp: 555)
+        
+        let malachi = Player(image: UIImage(named: "malachi"), name: "Malachi", desc: "Gruesome Demon from Hell.", locations: ["Death Wing's Lair"], weakness: ["Holy"], absorbs: ["Dark"], drops: ["Dark Shield", "Dark Armor"], HP: 450, level: 39, exp: 666)
+        
+        let akmodan = Player(image: UIImage(named: "akmodan"), name: "Akmodan", desc: "Ancient Egyptian mummy.", locations: ["Death Wing's Lair"], weakness: ["Holy", "Fire"], absorbs: ["Stone", "Poison", "Curse", "Dark"], drops: ["Rib of Vlad"] , HP: 1200, level: 40, exp: 1000)
+        
+        let blueVenusWeed = Player(image: UIImage(named: "bluevenusweed"), name: "Blue Venus Weed", desc: "Advanced Venus Weed. Fed with demon blood.", locations: ["Reverse Caverns", "Reverse Entrance,"], weakness: ["Fire"], absorbs: ["Hit"], drops: ["Zwei Hander",
+            "Heart Refresh"], HP: 550, level: 40, exp: 1000)
+        
+        let doppleganger40 = Player(image: UIImage(named: "dopplenganger"), name: "Doppleganger [LVL. 40]", desc: "Shape-shifting demon", locations: ["Reverse Caverns"], weakness: ["None"], absorbs: ["None"], drops: ["Life Vessel"], HP: 777, level: 40, exp: 2001)
+        
+        let medusa = Player(image: UIImage(named: "medusa"), name: "Medusa", desc: "Snake-headed demoness with gaze of stone.", locations: ["Anti-Chapel"], weakness: ["None"], absorbs: ["Hit", "Stone"], drops: ["Heart of Vlad"], HP: 1100, level: 40, exp: 2500)
+        
+        let theCreature = Player(image: UIImage(named: "creature"), name: "The Creature", desc: "Made from the body parts of powerful warriors.", locations: ["Reverse Outer Wall"], weakness: ["None"], absorbs: ["Thunder"], drops: ["Tooth of Vlad"], HP: 1100, level: 40, exp: 2500)
+        
+        let fakeGrant = Player(image: UIImage(named: "fakegrant"), name: "Fake Grant", desc: "Zombie impersonating Grant.", locations: ["Reverse Colosseum"], weakness: ["None"], absorbs: ["None"], drops: ["None"], HP: 800, level: 41, exp: 1200)
+        
+        let fakeTrevor = Player(image: UIImage(named: "faketrevor"), name: "Fake Trevor", desc: "Zombie impersonating Trevor.", locations: ["Reverse Colosseum"], weakness: ["None"], absorbs: ["None"], drops: ["None"], HP: 1200, level: 41, exp: 1200)
+        
+        let imp = Player(image: UIImage(named: "imp"), name: "Imp", desc: "Mischievous little demon.", locations: ["Anti-Chapel", "Necromancy Laboratory", "Reverse Caverns"], weakness: ["None"], absorbs: ["None"], drops: ["Luck Potion", "King's Stone"], HP: 43, level: 41, exp: 66)
+        
+        let fakeSypha = Player(image: UIImage(named: "fakesypha"), name: "Fake Sypha", desc: "Zombie impersonating Sypha.", locations: ["Reverse Colosseum"], weakness: ["None"], absorbs: ["None"], drops: ["None"], HP: 1000, level: 42, exp: 1500)
+        
+        let beelzebub = Player(image: UIImage(named: "beezlebub"), name: "Beelzebub", desc: "Beelzebub, Lord of Flies.", locations: ["Necromancy Laboratory"], weakness: ["Holy"], absorbs: ["Dark"], drops: ["Life Vessel"], HP: 2000, level: 44, exp: 4444)
+        
+        let azaghal = Player(image: UIImage(named: "azaghal"), name: "Azaghal", desc: "Executioner of Hell.", locations: ["Reverse Colosseum", "Death Wing's Lair"], weakness: ["None"], absorbs: ["Dark","Hit"], drops: ["Covenant Stone", "Mourneblade"], HP: 330, level: 45, exp: 700)
+        
+        let frozenHalf = Player(image: UIImage(named: "frozenhalf"), name: "Frozen Half", desc: "Transvestite ice spirit. Servant of Galamoth.", locations: ["Floating Catacombs"], weakness: ["Fire"], absorbs: ["Water", "Ice"], drops: ["Necklace of J", "Opal Circlet"], HP: 118, level: 45, exp: 600)
+        
+        let salome = Player(image: UIImage(named: "salome"), name: "Salome", desc: "Young female witch", locations: ["Floating Catacombs"], weakness: ["None"], absorbs: ["None"], drops: ["None"], HP: 210, level: 40, exp: 450)
+        
+        let richterBelmont = Player(image: UIImage(named: "richter"), name: "Richter Belmont", desc: "Master Vampire hunter.", locations: ["Castle Keep"], weakness: ["Dark"], absorbs: ["Holy", "Stone"], drops: ["None"], HP: 400, level: 48, exp: 0)
+        
+        let dodoBird = Player(image: UIImage(named: "dodobird"), name: "Dodo Bird", desc: "Rare bird. Runs when it sees people.", locations: ["Reverse Entrance"], weakness: ["None"], absorbs: ["None"], drops: ["Heart Broach", "Rune Sword"], HP: 2, level: 49, exp: 111)
+        
+        let galamoth = Player(image: UIImage(named: "galamoth"), name: "Galamoth", desc: "Magical being with plan to rule the netherworld.", locations: ["Floating Catacombs"], weakness: ["None"], absorbs: ["None"], drops: ["Life Vessel", "Gas Cloud"], HP: 12000, level: 50, exp: 9999)
+        
+        let guardian = Player(image: UIImage(named: "guardian"), name: "Guardian", desc: "High level Armor Lord.", locations: ["Black Marble Gallery"], weakness: ["None"], absorbs: ["Cut", "Fire", "Thunder","Ice", "Dark"], drops: ["Great Sword, God's Garb"], HP: 500, level: 60, exp: 1500)
+        
+        let death = Player(image: UIImage(named: "death2"), name: "Death", desc: "Dracula's close friend", locations: ["Cave"], weakness: ["Holy"], absorbs: ["Dark"], drops: ["Eye of Vlad"], HP: 888, level: 66, exp: 4444)
+        
+        let shaft = Player(image: UIImage(named: "shaft"), name: "Shaft", desc: "Dark Priest of Dracula.", locations: ["Reverse Castle Center"], weakness: ["None"], absorbs: ["Poison"], drops: ["None"], HP: 1300, level: 88, exp: 0)
+        
+        let dracula98 = Player(image: UIImage(named: "draculafinal"), name: "Dracula [Final]", desc: "Lord of Wallachia. Father of Alucard.", locations: ["Reverse Castle Center"], weakness: ["None"], absorbs: ["Fire", "Thunder", "Poison", "Dark"], drops: ["None"], HP: 9999, level: 98, exp: 0)
+        
+        
+            
+        
+        return [dracula, bloodSkeleton, bat, stoneSkull, zombie, merman2, skeleton,warg, boneScimitar, merman3, spittleBone, axeKnight, bloodyZombie, slinger, ouijaTable, skelerang, thornweed, gaibon, ghost, marionette, slogra, diplocephalus, fleaman, medusahead, bladeSoldier, boneMusket, medusahead2, plateLord, stoneRose, axeKnight2, ctulhu, boneArcher, bonePillar, doppleganger10, owl, phantomSkull, scyllaWrym, skeletonApe, spearGuard, spellBook, wingedGuard, ectoplasm, swordLord, toad, armorLord, cornerGuard, dhuron, frog, frozenShade, magicTome, skullLord, blackCrow, blueRaven, corpseWeed, flailGuard, fleaRider, spectralSword, boneHalberd, scylla, huntingGirl, mudman, owlKnight, spectralSword2, vandalSword, fleaArmor, hippogriph, paranthropus, slime, bladeMaster, wereSkeleton, graveKeeper, gremlin, harpy, minotaur, werewolf, boneArc, valhallaKnight, cloakedKnight, fishHead, lesserDemon, lossoth, salemWitch, blade, gurkha, hammer, discusLord, karasuman, largeSlime, hellfireBeast, cerberus, killerFish, olrox, succubus, tombstone, venusWeed, lion, scarecrow, granfaloon, schmoo, tinman, balloonPod, yorick, bombKnight, flyingZombie, bitterfly, jackObones, archer, werewolf34, blackPanther, darkWingBat, dragonRider, minotaur35, novaSkeleton, orobourous, whiteDragon, fireWarg, rockKnight, sniperOfGoth, spectralSword3, ghostDancer, wargRider, caveTroll, darkOctopus, fireDemon, gorgon,malachi, akmodan, blueVenusWeed, doppleganger40, medusa, theCreature, fakeGrant, fakeTrevor,imp,fakeSypha, beelzebub, azaghal, frozenHalf, salome, richterBelmont, dodoBird, galamoth, guardian, death, shaft, dracula98]
         
     }
     
