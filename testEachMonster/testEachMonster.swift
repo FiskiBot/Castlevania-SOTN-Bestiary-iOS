@@ -1,14 +1,14 @@
 //
-//  SplitViewUITests.swift
-//  SplitViewUITests
+//  testEachMonster.swift
+//  testEachMonster
 //
-//  Created by Patrick Moening on 7/13/16.
+//  Created by Patrick Moening on 8/22/16.
 //  Copyright © 2016 Loser Extreme. All rights reserved.
 //
 
 import XCTest
 
-class SplitViewUITests: XCTestCase {
+class testEachMonster: XCTestCase {
         
     override func setUp() {
         super.setUp()
@@ -26,36 +26,20 @@ class SplitViewUITests: XCTestCase {
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
-        
-        
     }
-    func testEachEnemy() {
-        
+    
+    func testEachMonster() {
         
         let app = XCUIApplication()
+        let table = app.tables
+        let cell = table.cells
+        var count : UInt = 0
         
-        
-        
-        while  app.tables.cells.count > 1 {
-            let count = app.tables.cells.count
-            let app = XCUIApplication()
-            app.tables.cells.elementBoundByIndex(1).tap()
+        while count < table.cells.count {
+            cell.elementBoundByIndex(count).tap()
             app.navigationBars["SplitView.DetailVC"].buttons["Enemies"].tap()
-            XCTAssertEqual(app.tables.cells.count, (count - 1))
-            
+            count += 1
             
         }
-        
-        
-        
-        
-    }
-    
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        
-        
-    }
-    
+    } 
 }

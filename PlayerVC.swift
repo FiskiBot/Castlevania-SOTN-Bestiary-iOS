@@ -12,6 +12,8 @@ class PlayerVC: UIViewController, UITableViewDataSource, UITableViewDelegate, UI
     
     @IBOutlet weak var tableView: UITableView!
     
+    
+    
     var players = Player.makeEnemies()
     var selectedPlayer : Player!
     

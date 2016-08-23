@@ -7,16 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		751C10BE1D67B44F00A97114 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7525F2451D36EE0E000DD4C3 /* Player.swift */; };
+		751C10BF1D67B45000A97114 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7525F2451D36EE0E000DD4C3 /* Player.swift */; };
 		7525F2141D36B5B5000DD4C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7525F2131D36B5B5000DD4C3 /* AppDelegate.swift */; };
 		7525F2191D36B5B5000DD4C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7525F2171D36B5B5000DD4C3 /* Main.storyboard */; };
 		7525F21E1D36B5B5000DD4C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7525F21C1D36B5B5000DD4C3 /* LaunchScreen.storyboard */; };
-		7525F2291D36B5B6000DD4C3 /* SplitViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7525F2281D36B5B6000DD4C3 /* SplitViewTests.swift */; };
-		7525F2341D36B5B6000DD4C3 /* SplitViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7525F2331D36B5B6000DD4C3 /* SplitViewUITests.swift */; };
-		7525F2461D36EE0E000DD4C3 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7525F2451D36EE0E000DD4C3 /* Player.swift */; };
 		75C0B87E1D3ED10700C6683B /* assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75C0B87D1D3ED10700C6683B /* assets.xcassets */; };
 		75C0B8801D3ED94E00C6683B /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C0B87F1D3ED94E00C6683B /* DetailVC.swift */; };
 		75C0B8811D3ED94E00C6683B /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C0B87F1D3ED94E00C6683B /* DetailVC.swift */; };
 		75C0B8821D3ED94E00C6683B /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C0B87F1D3ED94E00C6683B /* DetailVC.swift */; };
+		75DBBE3E1D67B616003F3F12 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7525F2451D36EE0E000DD4C3 /* Player.swift */; };
+		75DBBE461D6B7BCF003F3F12 /* testEachMonster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DBBE451D6B7BCF003F3F12 /* testEachMonster.swift */; };
 		75DD854D1D3D8C41006A5D02 /* PlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DD854C1D3D8C41006A5D02 /* PlayerVC.swift */; };
 		75DD854E1D3D8C41006A5D02 /* PlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DD854C1D3D8C41006A5D02 /* PlayerVC.swift */; };
 		75DD854F1D3D8C41006A5D02 /* PlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DD854C1D3D8C41006A5D02 /* PlayerVC.swift */; };
@@ -37,6 +38,13 @@
 			remoteGlobalIDString = 7525F20F1D36B5B5000DD4C3;
 			remoteInfo = SplitView;
 		};
+		75DBBE481D6B7BCF003F3F12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7525F2081D36B5B5000DD4C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7525F20F1D36B5B5000DD4C3;
+			remoteInfo = SplitView;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -46,14 +54,13 @@
 		7525F21D1D36B5B5000DD4C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7525F21F1D36B5B5000DD4C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7525F2241D36B5B6000DD4C3 /* SplitViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SplitViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7525F2281D36B5B6000DD4C3 /* SplitViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitViewTests.swift; sourceTree = "<group>"; };
-		7525F22A1D36B5B6000DD4C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7525F22F1D36B5B6000DD4C3 /* SplitViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SplitViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7525F2331D36B5B6000DD4C3 /* SplitViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitViewUITests.swift; sourceTree = "<group>"; };
-		7525F2351D36B5B6000DD4C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7525F2451D36EE0E000DD4C3 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		75C0B87D1D3ED10700C6683B /* assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = assets.xcassets; path = ../assets.xcassets; sourceTree = "<group>"; };
 		75C0B87F1D3ED94E00C6683B /* DetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		75DBBE431D6B7BCF003F3F12 /* testEachMonster.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testEachMonster.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		75DBBE451D6B7BCF003F3F12 /* testEachMonster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testEachMonster.swift; sourceTree = "<group>"; };
+		75DBBE471D6B7BCF003F3F12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75DD854C1D3D8C41006A5D02 /* PlayerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,6 +86,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		75DBBE401D6B7BCF003F3F12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -86,8 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				7525F2121D36B5B5000DD4C3 /* SplitView */,
-				7525F2271D36B5B6000DD4C3 /* SplitViewTests */,
-				7525F2321D36B5B6000DD4C3 /* SplitViewUITests */,
+				75DBBE441D6B7BCF003F3F12 /* testEachMonster */,
 				7525F2111D36B5B5000DD4C3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -98,6 +111,7 @@
 				7525F2101D36B5B5000DD4C3 /* SplitView.app */,
 				7525F2241D36B5B6000DD4C3 /* SplitViewTests.xctest */,
 				7525F22F1D36B5B6000DD4C3 /* SplitViewUITests.xctest */,
+				75DBBE431D6B7BCF003F3F12 /* testEachMonster.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -116,24 +130,6 @@
 				7525F21F1D36B5B5000DD4C3 /* Info.plist */,
 			);
 			path = SplitView;
-			sourceTree = "<group>";
-		};
-		7525F2271D36B5B6000DD4C3 /* SplitViewTests */ = {
-			isa = PBXGroup;
-			children = (
-				7525F2281D36B5B6000DD4C3 /* SplitViewTests.swift */,
-				7525F22A1D36B5B6000DD4C3 /* Info.plist */,
-			);
-			path = SplitViewTests;
-			sourceTree = "<group>";
-		};
-		7525F2321D36B5B6000DD4C3 /* SplitViewUITests */ = {
-			isa = PBXGroup;
-			children = (
-				7525F2331D36B5B6000DD4C3 /* SplitViewUITests.swift */,
-				7525F2351D36B5B6000DD4C3 /* Info.plist */,
-			);
-			path = SplitViewUITests;
 			sourceTree = "<group>";
 		};
 		7525F2411D36BB1C000DD4C3 /* Services */ = {
@@ -168,6 +164,15 @@
 			);
 			name = View;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		75DBBE441D6B7BCF003F3F12 /* testEachMonster */ = {
+			isa = PBXGroup;
+			children = (
+				75DBBE451D6B7BCF003F3F12 /* testEachMonster.swift */,
+				75DBBE471D6B7BCF003F3F12 /* Info.plist */,
+			);
+			path = testEachMonster;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,6 +231,24 @@
 			productReference = 7525F22F1D36B5B6000DD4C3 /* SplitViewUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		75DBBE421D6B7BCF003F3F12 /* testEachMonster */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75DBBE4C1D6B7BCF003F3F12 /* Build configuration list for PBXNativeTarget "testEachMonster" */;
+			buildPhases = (
+				75DBBE3F1D6B7BCF003F3F12 /* Sources */,
+				75DBBE401D6B7BCF003F3F12 /* Frameworks */,
+				75DBBE411D6B7BCF003F3F12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				75DBBE491D6B7BCF003F3F12 /* PBXTargetDependency */,
+			);
+			name = testEachMonster;
+			productName = testEachMonster;
+			productReference = 75DBBE431D6B7BCF003F3F12 /* testEachMonster.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -247,6 +270,10 @@
 						CreatedOnToolsVersion = 7.3.1;
 						TestTargetID = 7525F20F1D36B5B5000DD4C3;
 					};
+					75DBBE421D6B7BCF003F3F12 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 7525F20F1D36B5B5000DD4C3;
+					};
 				};
 			};
 			buildConfigurationList = 7525F20B1D36B5B5000DD4C3 /* Build configuration list for PBXProject "SplitView" */;
@@ -265,6 +292,7 @@
 				7525F20F1D36B5B5000DD4C3 /* SplitView */,
 				7525F2231D36B5B6000DD4C3 /* SplitViewTests */,
 				7525F22E1D36B5B6000DD4C3 /* SplitViewUITests */,
+				75DBBE421D6B7BCF003F3F12 /* testEachMonster */,
 			);
 		};
 /* End PBXProject section */
@@ -294,6 +322,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		75DBBE411D6B7BCF003F3F12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -301,9 +336,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75DBBE3E1D67B616003F3F12 /* Player.swift in Sources */,
 				75DD854D1D3D8C41006A5D02 /* PlayerVC.swift in Sources */,
 				75C0B8801D3ED94E00C6683B /* DetailVC.swift in Sources */,
-				7525F2461D36EE0E000DD4C3 /* Player.swift in Sources */,
 				7525F2141D36B5B5000DD4C3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,8 +347,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7525F2291D36B5B6000DD4C3 /* SplitViewTests.swift in Sources */,
 				75DD854E1D3D8C41006A5D02 /* PlayerVC.swift in Sources */,
+				751C10BE1D67B44F00A97114 /* Player.swift in Sources */,
 				75C0B8811D3ED94E00C6683B /* DetailVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -322,9 +357,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7525F2341D36B5B6000DD4C3 /* SplitViewUITests.swift in Sources */,
+				751C10BF1D67B45000A97114 /* Player.swift in Sources */,
 				75DD854F1D3D8C41006A5D02 /* PlayerVC.swift in Sources */,
 				75C0B8821D3ED94E00C6683B /* DetailVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75DBBE3F1D6B7BCF003F3F12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75DBBE461D6B7BCF003F3F12 /* testEachMonster.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +383,11 @@
 			isa = PBXTargetDependency;
 			target = 7525F20F1D36B5B5000DD4C3 /* SplitView */;
 			targetProxy = 7525F2301D36B5B6000DD4C3 /* PBXContainerItemProxy */;
+		};
+		75DBBE491D6B7BCF003F3F12 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7525F20F1D36B5B5000DD4C3 /* SplitView */;
+			targetProxy = 75DBBE481D6B7BCF003F3F12 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -516,6 +564,28 @@
 			};
 			name = Release;
 		};
+		75DBBE4A1D6B7BCF003F3F12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = testEachMonster/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.loserextreme.testEachMonster;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SplitView;
+			};
+			name = Debug;
+		};
+		75DBBE4B1D6B7BCF003F3F12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = testEachMonster/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.loserextreme.testEachMonster;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SplitView;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -554,6 +624,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		75DBBE4C1D6B7BCF003F3F12 /* Build configuration list for PBXNativeTarget "testEachMonster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75DBBE4A1D6B7BCF003F3F12 /* Debug */,
+				75DBBE4B1D6B7BCF003F3F12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

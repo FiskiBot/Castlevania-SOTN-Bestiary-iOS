@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct Player {
+class Player {
     private var _image : UIImage! = UIImage()
     var image : UIImage {return _image}
     
